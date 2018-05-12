@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.container {
+    overflow-y: scroll;
+    height: 100%;
+    position: relative;
+
+}
+.active {
+    background-color: #12471C;
+}
+nav {
+    background: linear-gradient(#2D2C2B, #93A3BC);
+    
+    
+}
+
+nav a {
+    color: white;
+}
+
+.caption{
+    color: black;
+    font-size: 25px;
+}
+.conor {
+    font-size: 75px;
+}
+
+.lead {
+    font-size: 50px;
+    color: black;
+    
+}
+
+.card {
+    color: black;
+}
+
+p a{
+    color: black;
+}
+
+.cardImg{
+    height: 250px;
+}
+
+h2 {
+    color: white;
+
+}
+
+.headline {
+   background-image: url(../images/bio_img2resize2.jpg);
+   background-size: cover;
+   height: 35rem;
+}
+
+#about {
+    background: linear-gradient(#93A3BC, #7A171A);
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+h3:after, h3:before {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 30%;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.25);
+    content: "";
+}
+h3.aboutHead:after {
+    left: 100%;
+    margin-left: 15px;
+  }
+
+#portfolio {
+    background: linear-gradient(#7A171A, #2D2C2B);
+    padding-bottom: 50px;
+}
+#skills {
+    background-color: #2D2C2B;
+}
+
+.skills {
+    font-size: 20px;
+}
+.card {
+    padding: 0;
+}
+
+#contact {
+    background: linear-gradient(#2D2C2B, #12471C);
+}
+
+.github{
+    color: black;
+    font-size: 70px;
+}
+
+.github:hover, .linkedIn:hover, .stackOverFlow:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+.linkedIn {
+    color: #327ab1;
+    font-size: 70px;
+}   
+
+
+.stackOverFlow {
+    color: #f3a73c;
+    font-size: 70px;
+}
+
+.mail a{
+    font-size: 30px;
+    color: white;
+}
+
+.btn {
+    background-color: #2D2C2B;
+}
