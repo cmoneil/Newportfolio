@@ -21,6 +21,9 @@ nav a {
     color: white;
 }
 
+.name {
+    background-color: rgba(45, 44, 43, 0.5)
+}
 .caption{
     color: black;
     font-size: 25px;
@@ -31,7 +34,6 @@ nav a {
 
 .lead {
     font-size: 50px;
-    color: black;
     
 }
 
@@ -76,9 +78,9 @@ h3:after, h3:before {
     border-bottom: 5px solid rgba(255, 255, 255, 0.25);
     content: "";
 }
-h3.aboutHead:after {
-    left: 100%;
-    margin-left: 15px;
+h3:after {
+   right: 0;
+    
   }
 
 #portfolio {
