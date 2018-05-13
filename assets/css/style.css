@@ -9,12 +9,31 @@ body {
 
 }
 .active {
-    background-color: #12471C;
+    background: linear-gradient(rgba(45, 44, 43, 0.5),#EE6055);
 }
 nav {
-    background: linear-gradient(#2D2C2B, #93A3BC);
-    
-    
+    background-color: rgba(45, 44, 43, 0.5);
+      
+}
+
+.nav-link {
+    margin-right: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #93A3BC;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
 
 nav a {
@@ -22,7 +41,8 @@ nav a {
 }
 
 .name {
-    background-color: rgba(45, 44, 43, 0.5)
+    background-color: rgba(45, 44, 43, 0.5);
+    margin-top: 50px;
 }
 .caption{
     color: black;
@@ -33,7 +53,7 @@ nav a {
 }
 
 .lead {
-    font-size: 50px;
+    font-size: 40px;
     
 }
 
@@ -41,6 +61,11 @@ nav a {
     color: black;
 }
 
+@media (max-width: 766px){
+    .card {
+      margin: 5px;
+    }
+  }
 p a{
     color: black;
 }
@@ -55,13 +80,17 @@ h2 {
 }
 
 .headline {
-   background-image: url(../images/bio_img2resize2.jpg);
-   background-size: cover;
-   height: 35rem;
+    background-image: url(../images/bio_img2resize2.jpg);
+   background-repeat: no-repeat;
+    background-size: auto 125%;
+    height: 45rem;
+     
 }
 
+
+
 #about {
-    background: linear-gradient(#93A3BC, #7A171A);
+    background-color: #7BD9E5;
 }
 
 h3 {
@@ -84,11 +113,11 @@ h3:after {
   }
 
 #portfolio {
-    background: linear-gradient(#7A171A, #2D2C2B);
+    background-color: #FCECC9;
     padding-bottom: 50px;
 }
 #skills {
-    background-color: #2D2C2B;
+    background-color: #FCB0B3;
 }
 
 .skills {
@@ -99,7 +128,7 @@ h3:after {
 }
 
 #contact {
-    background: linear-gradient(#2D2C2B, #12471C);
+    background-color: #EE6055;
 }
 
 .github{

@@ -28,19 +28,43 @@
 </head>
 
 <body data-spy="scroll" data-target="#navBar" data-offset="0">
-    <nav id="navBar" class="site-header sticky-top py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="nav-link py-2 d-none d-md-inline-block" href="#about">About</a>
-            <a class="nav-link py-2 d-none d-md-inline-block" href="#portfolio">Portfolio</a>
-            <a class="nav-link py-2 d-none d-md-inline-block" href="#main">Conor</a>
-            <a class="nav-link py-2 d-none d-md-inline-block" href="#skills">Skills</a>
-            <a class="nav-link py-2 d-none d-md-inline-block" href="#contact">Contact</a>
+    <nav id="navBar" class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#main">Conor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link grow" href="#about">About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grow" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grow" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link grow" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <!-- <nav id="navBar" class="site-header sticky-top py-1 navbar-expand-md">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="nav-link py-2 d-none d-md-inline-block grow" href="#about">About</a>
+            <a class="nav-link py-2 d-none d-md-inline-block grow" href="#portfolio">Portfolio</a>
+            <a class="nav-link py-2 d-none d-md-inline-block grow" href="#main">Conor</a>
+            <a class="nav-link py-2 d-none d-md-inline-block grow" href="#skills">Skills</a>
+            <a class="nav-link py-2 d-none d-md-inline-block grow" href="#contact">Contact</a>
+    </nav> -->
 
     <div id="main" class="headline position-relative overflow-hidden p-3 p-md-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-4 name">
+                <div class="col-lg-7 col-md-6 col-sm-10 text-center name">
                     <h1 class="conor font-weight-normal">I'm Conor O'Neil</h1>
                     <h2 class="lead font-weight-normal">I'm a Full Stack Web Developer</h2>
                 </div>
@@ -58,36 +82,35 @@
             </div>
 
             <div class="row">
-                
-                    <div class="col-lg-4 col-sm-12 mt-3">
-                        <p>I grew up and have lived in the Midwest my whole life. I guess Minnesotans don't really consider
-                            themselves Midwesterners but everyone in Minnesota thinks I'm from the south because I lived
-                            in Kansas. Kansas is not in the south. Its right in the middle of the country. Though anytime
-                            I go back to visit there, I seem to pick up a "southern accent". Its not an Alabama southern
-                            accent but its definitely not a Minnesota accent. I have now lived in Minnesota longer than anywhere
-                            else so I guess I am now more Minnesotan than anything.
-                        </p>
-                    </div>
 
-                    <div class="col-lg-4 col-sm-12 mt-3">
-                        <p>The picture above was taken in Portovenere, Italy. It's right on the coast of Italy and is just to
-                            the south of Cinque Terre. My wife and I went there and the end of our honeymoon in the summer
-                            of 2017. We did a whirlwind European honeymoon. It was 2 weeks but we managed to go to 6 different
-                            cities so it was long but we crammed in a lot of Europe. It was definitely the best trip of my
-                            life. I have had some really good trips before but this was my first as a husband and it made
-                            it that much better.
-                        </p>
-                    </div>
+                <div class="col-lg-4 col-sm-12 mt-3">
+                    <p>I grew up and have lived in the Midwest my whole life. I guess Minnesotans don't really consider themselves
+                        Midwesterners but everyone in Minnesota thinks I'm from the south because I lived in Kansas. Kansas
+                        is not in the south. Its right in the middle of the country. Though anytime I go back to visit there,
+                        I seem to pick up a "southern accent". Its not an Alabama southern accent but its definitely not
+                        a Minnesota accent. I have now lived in Minnesota longer than anywhere else so I guess I am now more
+                        Minnesotan than anything.
+                    </p>
+                </div>
 
-                    <div class="col-lg-4 col-sm-12 mt-3">
-                        <p>
-                            I attended the University of Kansas and graduated with a bachelor's degree in psychology. I have worked in advertising, banking,
-                            retail, and printing since graduation, but nothing directly related to my degree. I still follow
-                            everything KU related even the football team even if they may be the worst D1 football in the
-                            country. You would think that a school that has one of the best basketball programs in the country
-                            could at least field a decent football team.</p>
-                    </div>
-                
+                <div class="col-lg-4 col-sm-12 mt-3">
+                    <p>The picture above was taken in Portovenere, Italy. It's right on the coast of Italy and is just to the
+                        south of Cinque Terre. My wife and I went there and the end of our honeymoon in the summer of 2017.
+                        We did a whirlwind European honeymoon. It was 2 weeks but we managed to go to 6 different cities
+                        so it was long but we crammed in a lot of Europe. It was definitely the best trip of my life. I have
+                        had some really good trips before but this was my first as a husband and it made it that much better.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-12 mt-3">
+                    <p>
+                        I attended the University of Kansas and graduated with a bachelor's degree in psychology. I have worked in advertising, banking,
+                        retail, and printing since graduation, but nothing directly related to my degree. I still follow
+                        everything KU related even the football team even if they may be the worst D1 football in the country.
+                        You would think that a school that has one of the best basketball programs in the country could at
+                        least field a decent football team.</p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -99,7 +122,7 @@
             </div>
             <div class="row">
 
-                <div class="card col-lg-5 col-sm-12 mb-2 h-50">
+                <div class="card col-lg-5 col-sm-5 h-50 mb-5">
                     <img class="card-img-top cardImg" src="assets/images/crystals6.jpg" alt="Card image cap">
                     <a href='https://cmoneil.github.io/week-4-game/index.html' class="caption">
                         <div class="card-header text-center">Crystal Collector</div>
@@ -113,41 +136,52 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-lg-0"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-0"></div>
 
-                <div class="card col-lg-5 col-sm-12 mb-2 h-50">
-                    <img class="card-img-top cardImg" src="assets/images/triviaBackground.jpg" alt="Card image cap">
-                    <a href='https://cmoneil.github.io/TriviaGame/index.html' class="caption">
-                        <div class="card-header text-center">Trivia Game</div>
-                    </a>
-                    <div class="card-body">
-                        <p class="card-text">This is a timed trivia game. It will ask you a series of multiple choice questions and will score you based on the number of correct choices you make. Uses HTML, CSS, JavaScript, and jQuery. <a href="https://github.com/cmoneil/TriviaGame">Github link to project.</a>
-                        </p>
+                <div class="card col-lg-5 col-sm-5 h-50 mb-5">
+                        <img class="card-img-top cardImg" src="assets/images/fireWorks.gif" alt="Card image cap">
+                        <a href='https://cmoneil.github.io/GifTastic/index.html' class="caption">
+                            <div class="card-header text-center">Gif Party</div>
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">This is a web app that will pull gifs using the giphy api. It has buttons that are already populated
+                                but you can add more using the search function. The gifs start as still, but will animate on
+                                a mouse click. Uses HTML, CSS, JavaScript, jQuery, and ajax.
+                                <a href="https://github.com/cmoneil/GifTastic">Github link to project.</a>
+                            </p>
+                        </div>
+    
                     </div>
 
-                </div>
+                
             </div>
 
             <div class="row">
-                <div class="card col-lg-5 col-sm-12 h-50 mb-2">
-                    <img class="card-img-top cardImg" src="assets/images/fireWorks.gif" alt="Card image cap">
-                    <a href='https://cmoneil.github.io/GifTastic/index.html' class="caption">
-                        <div class="card-header text-center">Gif Party</div>
-                    </a>
-                    <div class="card-body">
-                        <p class="card-text">This is a web app that will pull gifs using the giphy api. It has buttons that are already populated but you can add more using the search function. The gifs start as still, but will animate on a mouse click. Uses HTML, CSS, JavaScript, jQuery, and ajax. <a href="https://github.com/cmoneil/GifTastic">Github link to project.</a>
-                        </p>
-                    </div>
+                    <div class="card col-lg-5 col-sm-5 h-50 mb-2">
+                            <img class="card-img-top cardImg" src="assets/images/triviaBackground.jpg" alt="Card image cap">
+                            <a href='https://cmoneil.github.io/TriviaGame/index.html' class="caption">
+                                <div class="card-header text-center">Trivia Game</div>
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">This is a timed trivia game. It will ask you a series of multiple choice questions and will score
+                                    you based on the number of correct choices you make. Uses HTML, CSS, JavaScript, and jQuery.
+                                    <a href="https://github.com/cmoneil/TriviaGame">Github link to project.</a>
+                                </p>
+                            </div>
+        
+                        </div>
 
-                </div>
-                <div class="col-lg-2 col-sm-0"></div>
-                <div class="card col-lg-5 col-sm-12 h-50 mb-2">
+                
+                <div class="col-lg-2 col-md-2 col-sm-2 col-0"></div>
+                <div class="card col-lg-5 col-sm-5 h-50 mb-2">
                     <img class="card-img-top cardImg" src="assets/images/friendsPic.jpg" alt="Card image cap">
                     <a href='https://cmoneil.github.io/Hangman-Game/index.html' class="caption">
                         <div class="card-header text-center">90's Hangman</div>
                     </a>
                     <div class="card-body">
-                        <p class="card-text">This game is a 90's based Hangman game. It will give you a series of blanks which you then have to have guess the letter for each blank. Its Hangman. Uses HTML, CSS, and JavaScript. <a href="https://github.com/cmoneil/Hangman-Game">Github link to project.</a>
+                        <p class="card-text">This game is a 90's based Hangman game. It will give you a series of blanks which you then have to
+                            have guess the letter for each blank. Its Hangman. Uses HTML, CSS, and JavaScript.
+                            <a href="https://github.com/cmoneil/Hangman-Game">Github link to project.</a>
                         </p>
                     </div>
 
@@ -167,7 +201,7 @@
                 <div class="col-6 text-center">
                     <p>HTML</p>
                     <p></p>CSS</p>
-                    <p>Javascript</p>
+                    <p>JavaScript</p>
                 </div>
                 <div class="col-6 text-center">
                     <p>jQuery</p>
@@ -193,19 +227,19 @@
 
 
                     <a href="https://github.com/cmoneil" alt="Github Repository" class="github">
-                        <i class="fa fa-github-square"></i>
+                        <i class="fa fa-github-square grow"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/conor-oneil-597bb9133" alt="LinkedIn Page" class="linkedIn">
-                        <i class="fa fa-linkedin-square"></i>
+                        <i class="fa fa-linkedin-square grow"></i>
                     </a>
                     <a href="https://stackexchange.com/users/12829429/cmoneil" alt="Stack Overflow Page" class="stackOverFlow">
-                        <i class="fa fa-stack-overflow"></i>
+                        <i class="fa fa-stack-overflow grow"></i>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="container text-center mail mb-5">
-                    <a class="btn btn-lg btn-border" href="mailto:coneil713@gmail.com?Subject=Portfolio%20link">Send a message</a>
+                    <a class="btn btn-lg btn-border grow" href="mailto:coneil713@gmail.com?Subject=Portfolio%20link">Send a message</a>
                 </div>
             </div>
         </div>
