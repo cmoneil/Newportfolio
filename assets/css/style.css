@@ -33,7 +33,7 @@ a:hover {
 {
         -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
-        transform: scale(1.3) translate(69px);
+        transform: scale(1.3);
 }
 
 nav a {
@@ -61,18 +61,11 @@ nav a {
     color: black;
 }
 
-@media (max-width: 766px){
-    .card {
-      margin: 5px;
-    }
-  }
 p a{
     color: black;
 }
 
-.cardImg{
-    height: 250px;
-}
+
 
 h2 {
     color: white;
@@ -81,8 +74,8 @@ h2 {
 
 .headline {
     background-image: url(../images/bio_img2resize2.jpg);
-   background-repeat: no-repeat;
-   background-position: center top;
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: auto 125%;
     height: 45rem;
      
@@ -151,6 +144,7 @@ h3:after {
 .stackOverFlow {
     color: #f3a73c;
     font-size: 70px;
+    padding-bottom: 10px;
 }
 
 .mail a{
@@ -158,6 +152,46 @@ h3:after {
     color: white;
 }
 
+.mail {
+    padding: 15px 0 15px 0;
+}
+
 .btn {
     background-color: #2D2C2B;
+   
 }
+
+@media (max-width: 766px){
+    .card {
+      margin: 5px;
+    }
+    .grow:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3) translate(69px);
+
+    }
+
+    i.grow:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.2) translate(0, -10px);
+
+    }
+
+    .mailBtn.grow:hover{
+        transform: scale(1.2) translate(0, -5px);
+
+    }
+    h3:after, h3:before {
+        width: 15%;
+    }
+
+    h3:after {
+        margin-right: 15px;
+         }
+
+    .name{
+        width: 70%;
+    }
+  }
