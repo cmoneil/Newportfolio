@@ -1,49 +1,31 @@
+$(document).ready(function (){
 var skillsToDraw = [
-    { text: 'javascript', size: 40 },
+    { text: 'JavaScript', size: 40 },
     { text: 'D3.js', size: 15 },
-    { text: 'coffeescript', size: 25 },
-    { text: 'shaving sheep', size: 25 },
-    { text: 'AngularJS', size: 30 },
-    { text: 'Ruby', size: 30 },
-    { text: 'ECMAScript', size: 15 },
-    { text: 'Actionscript', size: 10 },
-    { text: 'Linux', size: 20 },
-    { text: 'C++', size: 20 },
-    { text: 'C#', size: 25 },
-    { text: 'JAVA', size: 38 },
+    { text: 'HTML', size: 38 },
+    { text: 'MySQL', size: 30 },
+    { text: 'MongoDB', size: 30 },
+    { text: 'CSS', size: 40 },
+    { text: 'jQuery', size: 38 },
+    { text: 'Bootstrap', size: 40 },
+    { text: 'Express.js', size: 30 },
+    { text: 'Node.js', size: 30 },
+    { text: 'Firebase', size: 25 },
+    { text: 'Heroku', size: 38 },
+    { text: 'Sequelize', size: 35 },
+    { text: 'Cheerio', size: 28 },
+    { text: 'Mongoose', size: 28 },
+    { text: 'Handlebars', size: 28 },
   // just copy twice for extra data, else the cloud is a little boring
-    { text: 'javascript', size: 40 },
-    { text: 'D3.js', size: 15 },
-    { text: 'coffeescript', size: 25 },
-    { text: 'shaving sheep', size: 25 },
-    { text: 'AngularJS', size: 30 },
-    { text: 'Ruby', size: 30 },
-    { text: 'ECMAScript', size: 15 },
-    { text: 'Actionscript', size: 10 },
-    { text: 'Linux', size: 20 },
-    { text: 'C++', size: 20 },
-    { text: 'C#', size: 25 },
-    { text: 'JAVA', size: 38 },
-    { text: 'javascript', size: 40 },
-    { text: 'D3.js', size: 15 },
-    { text: 'coffeescript', size: 25 },
-    { text: 'shaving sheep', size: 25 },
-    { text: 'AngularJS', size: 30 },
-    { text: 'Ruby', size: 30 },
-    { text: 'ECMAScript', size: 15 },
-    { text: 'Actionscript', size: 10 },
-    { text: 'Linux', size: 20 },
-    { text: 'C++', size: 20 },
-    { text: 'C#', size: 25 },
-    { text: 'JAVA', size: 38 }
+    
 ];
 
 // Next you need to use the layout script to calculate the placement, rotation and size of each word:
 
 var width = 500;
-var width = 500;
+var width = 1000;
 var height = 500;
-var fill = d3.schemeCategory20;
+var fill = d3.scale.category20();
 
     d3.layout.cloud()
     	.size([width, height])
@@ -99,3 +81,4 @@ var fill = d3.schemeCategory20;
     var bbox = svg.getBBox();
     var viewBox = [bbox.x, bbox.y, bbox.width, bbox.height].join(" ");
     svg.setAttribute("viewBox", viewBox);
+})
