@@ -16,6 +16,22 @@ nav {
       
 }
 
+.aboutCol{
+        -webkit-column-count: 3;
+        padding-bottom: 20px;
+}
+
+.col1{
+    text-indent: 10px;
+}
+
+.col2{
+    text-indent: 10px;
+}
+
+.col3{
+    text-indent: 10px;
+}
 .nav-link {
     margin-right: 10px;
 }
@@ -41,7 +57,7 @@ nav a {
 }
 
 .name {
-    background-color: rgba(45, 44, 43, 0.5);
+    background-color: rgba(96, 74, 50, 0.5);
     margin-top: 50px;
 }
 .caption{

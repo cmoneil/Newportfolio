@@ -25,7 +25,11 @@
 
     <!-- Custom styles for this template -->
     <!--<link href="assets/css/reset.css" rel="stylesheet"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.js"></script>
     <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/app.js"></script>
+    
 </head>
 
 <body data-spy="scroll" data-target="#navBar" data-offset="0">
@@ -76,8 +80,9 @@
 
             <div class="row">
 
-                <div class="col-lg-4 col-sm-12 mt-3">
-                    <p>The picture above was taken in Porto Venere, a little medieval town on the Ligurian coast of northwestern
+                <div class="aboutCol">
+                    <div class="col1">
+                        The picture above was taken in Porto Venere, a little medieval town on the Ligurian coast of northwestern
                         Italy, just a stone’s throw away from the famous Cinque Terre. My wife and I ended our European honeymoon
                         there during the summer of 2017. We visited Paris, Spain’s San Sebastian, Barcelona, Tuscany and
                         Milan. It was definitely the best trip I’ve ever taken. I love traveling, especially eating my way
@@ -85,22 +90,22 @@
                         as a husband. Traveling with my new wife and best friend made it that much better. Ask me about my
                         latest adventure or a memorable dining experience in the Twin Cities, I’m always happy to compare
                         travel and foodie notes!
-                    </p>
-                </div>
-
-                <div class="col-lg-4 col-sm-12 mt-3">
-                    <p>I grew up and have lived in the Midwest my whole life. That said, most Minnesotans think I'm from the
+                    </div>
+                        <br>
+                        
+                        <div class="col2">
+                    I grew up and have lived in the Midwest my whole life. That said, most Minnesotans think I'm from the
                         south because I was born in Iowa and lived in Kansas during my formative years. Kansas is not in
                         the south, Its right in the middle of the country. Though anytime I go back to visit, I pick up a
                         southern accent. As a University of Kansas Alumni, I’m a diehard Jayhawks fan. I have now lived in
                         Minneapolis longer than any other city so, technically, I am more Minnesotan than anything. The trees,
                         lakes and rivers definitely have something on Kansas’ rolling plains, but I will always prefer basketball
                         over hockey.
-                    </p>
-                </div>
-
-                <div class="col-lg-4 col-sm-12 mt-3">
-                    <p>I graduated with a bachelor's degree in psychology from the University of Kansas. I have 17 years of
+                        <br>
+                        <br>
+                        </div>
+                        <div class="col3">
+                    I graduated with a bachelor's degree in psychology from the University of Kansas. I have 17 years of
                         work and management experience in various industries: advertising, banking, retail, and most recently
                         printing operations. The decision to change careers comes from a long-standing interest in technology,
                         research and a passion for problem solving. I enrolled in the University of Minnesota’s Web Development
@@ -108,9 +113,9 @@
                         about. I’m just over half way through the program and wish I would have made the change five years
                         ago. I love everything I am learning and the industry feels like a perfect fit. I look forward to
                         speaking with you about entry-level web development positions and how my skills, interests and personality
-                        would be a fit within your organization. </p>
+                        would be a fit within your organization. 
+                        </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -246,7 +251,8 @@
             <div class="row">
                 <h3 class="text-center col mt-3 mb-3">SKILLS</h3>
             </div>
-            <div class="row skills">
+            <div id="cloud"></div>
+            <!-- <div id="cloud" class="row skills">
                 <div class="col-6 text-center">
                     <p>HTML</p>
                     </p>CSS</p>
@@ -267,7 +273,7 @@
                     <p>Sequelize</p>
                     <p>And working on many others</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
